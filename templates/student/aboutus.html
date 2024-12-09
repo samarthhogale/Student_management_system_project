@@ -1,0 +1,60 @@
+{% extends 'masterpage.html' %}
+
+{% block title %}
+  aboutus
+{% endblock title %}
+
+{%block body%}
+<center>
+    <h2 style="color: cornflowerblue;background-color: ghostwhite;">Transform Your Career through learning</h2>
+   
+    <div style="width: 80%;height: 400px;">
+        <div class="card-group" style="margin: auto;margin-top: 20px;">
+            <div class="card" style="height: 400px;width: 400px;">
+              <img class="card-img-top" src="https://www.hindustantimes.com/ht-img/img/2023/06/27/550x309/pexels-christina-morillo-1181527_1687871948886_1687871984520.jpg" >
+              <div class="card-body">      
+              </div>
+            </div>
+    
+            <div class="card">
+              <img class="card-img-top" src="https://www.billboard.com/wp-content/uploads/2022/05/business-casual-2022-billboard-1548.jpeg" alt="Card image cap" >
+              <div class="card-body">
+              </div>
+            </div>     
+         </div>
+    </div>
+
+</center>
+
+<div style="width:100%; height:350px; background-color: ivory;margin-top: 20px;"> 
+    <div style="width:55%; height:350px; background-color:white; float: left;padding: 30px; ">
+        <h2>Our Mission</h2>
+        <h4>Remove the barriers to being employed. Our single motto is to provide equal education and job opportunities.</h4>
+        <h6>The Kiran Academy takes the first step toward a rewarding career in the field of Information Technology. Our classes are designed to provide students with a comprehensive understanding of the latest technologies and tools used in the industry, as well as the knowledge and skills they need to succeed.
+
+            Don't miss this opportunity to take your career to the next level. Sign up for our IT classes today and start your journey toward a rewarding career in the field of Information Technology.</h6>
+    </div>
+
+    <div style="width:45%; height:350px; background-color:white; float: left;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ixZXxfcVb24KrAKB61tFJhqHKNm3Sd_kcg&s" alt="Card image cap" >
+
+    </div>    
+</div>
+
+<center>
+    <div class="card" style="width: 350px; height: 400px;">
+        <img class="card-img-top" src="https://thekiranacademy.com/img/about-rectangle-img.png" alt="Card image cap">
+        <div class="card-body" style="height:350px;width:400px;">
+          <h5 class="card-title">Kiran Digrase- Founder</h5>
+          <p class="card-text">He established the academy in 2014.
+            He was employed by several multinational corporations for nearly 14 years.
+            He has instructed over 15,000 students, and the number continues to increase daily.
+            To date, numerous projects have been completed, and he is well-versed in the payment and eCommerce industries.</p>
+          <a href="{% url 'registration'%}" class="btn btn-primary">Join Us</a>
+        </div>
+      </div>
+</center>
+
+
+
+{%endblock body%}

@@ -1,0 +1,53 @@
+{% extends 'masterpage.html' %}
+
+{% block title %}
+signup
+{% endblock title %}
+
+{% block body %}
+<div
+  style="width: 35%; margin: auto; border: 3px solid black; padding: 15px; margin-top: 50px; background-color: cadetblue;">
+  <h1>SignUp</h1>
+  {% include "messages.html "%}
+  <hr>
+  <form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="f">First Name</label>
+      <input type="text" class="form-control" id="f" aria-describedby="emailHelp" placeholder="Enter First name"
+        name="fname">
+    </div>
+
+    <div class="form-group">
+      <label for="l">Last Name</label>
+      <input type="text" class="form-control" id="l" aria-describedby="emailHelp" placeholder="Enter First name"
+        name="lname">
+    </div>
+
+    <div class="form-group">
+      <label for="u">User Name</label>
+      <input type="text" class="form-control" id="u" aria-describedby="emailHelp" placeholder="Enter user name"
+        name="uname">
+    </div>
+
+    <div class="form-group">
+      <label for="e">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter email" name="email">
+
+    </div>
+
+    <div class="form-group">
+      <label for="p1">Password</label>
+      <input type="password" class="form-control" id="p1" placeholder="Password" name="pass1">
+    </div>
+
+    <div class="form-group">
+      <label for="p2">Confirm Password</label>
+      <input type="password" class="form-control" id="p2" placeholder="Confirm Password" name="pass2">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{% endblock body %}

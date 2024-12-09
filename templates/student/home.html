@@ -1,0 +1,55 @@
+{% extends 'masterpage.html' %}
+
+{% block title %}
+  home
+{% endblock title %}
+
+{% block body %}
+<div class="card bg-dark text-white">
+  <img class="card-img" src="https://images.hdqwalls.com/download/i-love-coding-xl-1920x1080.jpg" alt="Card image">
+  <div style="text-align: center;" class="card-img-overlay">
+    <h1 class="card-title"><span style="color: orange;">T</span>he
+      <span style="color: orange;">K</span>iran <span style="color: orange;">A</span>cadamy
+  </h1>
+  <hr><hr>
+  {% include "messages.html" %}
+    <p style="color: azure;" class="card-text"><h3>Top rated IT Training Classes in Pune</h3></p>
+    <p style="color: rgb(139, 142, 144);" class="card-text"><h3>Java, Selenium, Python, MERN Stack, .Net Courses</h3></p>
+      <p class="card-text"><h4>100% Job Placement Support</h4></p>
+   
+    <a class="btn btn-primary btn-lg" href="{%url 'registration' %}">Register for demo</a>
+  </div>
+</div>
+<center><marquee><h1 style="margin-top: 50px;">Most Popular IT Training Courses in Pune</h1></marquee><br>
+<h6 style="color: orangered;">Software Industry Offers High-Paying Jobs for the most demanding IT Courses - Java, Selenium, Python, AWS, Azure, Salesforce</h6></center>
+
+<div style="display: flex; margin-top: 30px;">
+<div class="card" style="width: 20rem; margin: auto;">
+  <img style="background-color: black;" class="card-img-top" src="https://i.pinimg.com/originals/2f/9c/11/2f9c11f9e55efbf1791f12c06d60729b.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5>Python Programming Language</h5>
+    <p class="card-text">Python is a computer programming language often used to build websites and software, automate tasks, and analyze data.</p>
+    <a class="btn btn-info" href="{%url 'python'%}">Learn more</a>
+    <a style="margin-left:80px;" class="btn btn-success" href="{%url 'registration'%}">Register</a>
+  </div>
+</div>
+<div class="card" style="width: 20rem; margin: auto;">
+  <img height="280px" style="background-color: black;" class="card-img-top" src="https://brandslogos.com/wp-content/uploads/thumbs/java-logo-vector-1.svg" alt="Card image cap">
+  <div class="card-body">
+    <h5>Java Pragramming Language</h5>
+    <p class="card-text">Java is a computer programming language often used to build mobile and web apps, enterprise software, gaming, big data, distributed, and cloud-based applications among other types.</p>
+    <a class="btn btn-info" href="{%url 'python'%}">Learn more</a>
+    <a style="margin-left:80px;" class="btn btn-success" href="{%url 'registration'%}">Register</a>
+  </div>
+</div>
+<div class="card" style="width: 20rem; margin: auto;">
+  <img style="background-color: black;" class="card-img-top" src="https://i.pinimg.com/originals/4a/41/7d/4a417d1f8cab870d4e93498ae1ae2d21.png" alt="Card image cap">
+  <div class="card-body">
+    <h5>Amazon Web Services</h5>
+    <p class="card-text">Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally.</p>
+    <a class="btn btn-info" href="{%url 'python'%}">Learn more</a>
+    <a style="margin-left:80px;" class="btn btn-success" href="{%url 'registration'%}">Register</a>
+  </div>
+</div>
+</div>
+{% endblock body%}

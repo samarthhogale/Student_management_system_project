@@ -1,0 +1,41 @@
+{% extends 'masterpage.html' %}
+
+{% block title %}
+    dashboard
+{% endblock title %}
+
+{% block body %}
+    <center><h1 class="display-4">Student Details</h1></center>
+    <div class="container">
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Reg No</th>
+                <th scope="col">Name</th>
+                <th scope="col">City</th>
+                <th scope="col">Email</th>
+                <th scope="col">Degree</th>
+                <th scope="col">Percentage</th>
+                <th scope="col">Course</th>
+                <th scope="col">Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for student in students%}
+              <tr>
+                <td>{{student.reg_no}}</td>
+                <td><a href="/myaccount/singlestudentdetails/
+                  {{student.reg_no}}/">{{student.name}}</a></td>
+                <td>{{student.city}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.degree}}</td>
+                <td>{{student.percentage}}</td>
+                <td>{{student.course}}</td>
+                <td>{{student.fee}}</td>
+              </tr>
+              {% endfor %}
+              
+            </tbody>
+          </table>
+    </div>
+{% endblock body %}
